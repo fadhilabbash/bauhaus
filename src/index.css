@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: linear-gradient(to top right, #05060a, #37425a);
+}
+body {
+  background: var(--background);
+  color: white;
+  margin: 0;
+  font-family: "Alexandria", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:normal;
+  font-style: normal;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 12px !important;
+  color: white;
+}
+
+.swiper-pagination-bullet {
+
+
+  background-color: #fff !important;
+  border: 2px solid #ccc !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  border-color: #F35588 !important; 
+}
