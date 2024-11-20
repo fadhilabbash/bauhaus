@@ -8,6 +8,7 @@ export default {
         secondary: "#e1f5f6",
         secondary2: "#C2ECEC",
         secondary3: "#F35588",
+        darkPinc:"#131721",
         darkBlue: '#242b3e',
         mediumBlue: '#34405b',
       },

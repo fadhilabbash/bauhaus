@@ -5,7 +5,7 @@ import "swiper/swiper-bundle.css";
 
 const BottomCarousel = () => {
   return (
-    <div className="relative  w-[400px] h-[200px] md:w-[540px] md:h-[240px] mx-auto  flex items-center justify-between mb-[200px] py-20 bg-gradient-to-r from-[#10113299] to-[#777CF700] rounded-3xl border border-mediumBlue">
+    <div className="relative  w-[400px] h-[200px] md:w-[540px] md:h-[240px] mx-auto  flex items-center justify-between mb-[200px] py-20 bg-gradient-to-tr from-black to-darkBlue rounded-3xl border border-mediumBlue">
       <div
         id="swiper-button-prev"
         className="hidden md:flex absolute  -right-32 cursor-pointer border border-primary rounded-full text-center px-4 py-1"

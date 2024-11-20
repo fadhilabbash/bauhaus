@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight01Icon } from "hugeicons-react";
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
               href="#contact"
               className="text-white  bg-[#37afb0] rounded-full py-2 px-6 hover:motion-preset-flomoji-🚀"
             >
-              <ArrowUpRight />
+              <ArrowUpRight01Icon />
             </a>
             <a
               href="#contact"
@@ -38,7 +38,7 @@ const Hero = () => {
     
         <div className="md:w-1/2 flex flex-col items-end justify-between">
           <div className="relative h-[300px] w-[300px] rounded-xl">
-            <div className="absolute inset-0 bg-darkBlue opacity-30 rounded-xl"></div>
+            <div className="absolute inset-0 bg-black opacity-25 rounded-xl"></div>
             <div className="absolute left-6 right-6 top-12 h-12 bg-secondary2 rounded-full flex flex-row items-center">
              
               <img className="mx-2 size-10 rounded-full" src="./src/assets/images/avater.jpg" alt="" />

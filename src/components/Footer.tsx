@@ -1,3 +1,11 @@
+import {
+  InstagramIcon,
+  PinterestIcon,
+  Linkedin01Icon,
+  TwitterIcon,
+  WhatsappIcon,
+} from "hugeicons-react";
+
 const Footer = () => {
   return (
     <footer>
@@ -37,13 +45,11 @@ const Footer = () => {
               تواصل معنا عبر المنصات التالية
             </h2>
             <div className="flex space-x-6 rtl:space-x-reverse">
-              <i className="ri-facebook-circle-line text-primary text-2xl"></i>
-
-              <i className="ri-instagram-line text-primary text-2xl"></i>
-
-              <i className="ri-youtube-line text-primary text-2xl"></i>
-
-              <i className="ri-twitter-line text-2xl text-primary"></i>
+              <InstagramIcon color="#37afb0" />
+              <PinterestIcon color="#37afb0" />
+              <Linkedin01Icon color="#37afb0" />
+              <TwitterIcon color="#37afb0" />
+              <WhatsappIcon color="#37afb0" />
             </div>
           </div>
         </div>

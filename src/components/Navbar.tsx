@@ -1,12 +1,15 @@
 import { useState } from "react";
-import { Menu} from "lucide-react";
+import {
+  Menu01Icon,
+
+} from "hugeicons-react";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <header className="">
-      <nav className="max-w-7xl mx-auto pt-8">
+      <nav className="max-w-6xl mx-auto pt-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
 
@@ -19,26 +22,32 @@ const Navbar = () => {
                 width={150}
               />
             </div>
-            <div className="hover:shadow-[inset_0_-1px_0_0_rgba(55,175,176,0.8)]">
+            <div className="group">
               <a href="#home" className="text-white pb-1">
                 الرئيسية
               </a>
+              <div className="h-[1.5px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <div className="hover:shadow-[inset_0_-1px_0_0_rgba(55,175,176,0.8)]">
+            <div className="group">
               <a href="#home" className="text-white pb-1">
-                لماذا BauHaus
+              لماذا BauHaus
               </a>
+              <div className="h-[1.5px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <div className="hover:shadow-[inset_0_-1px_0_0_rgba(55,175,176,0.8)]">
+            <div className="group">
               <a href="#home" className="text-white pb-1">
-                خدماتنا
+              خدماتنا
               </a>
+              <div className="h-[1.5px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <div className="hover:shadow-[inset_0_-1px_0_0_rgba(55,175,176,0.8)]">
+            <div className="group">
               <a href="#home" className="text-white pb-1">
-                عن BauHaus
+              عن BauHaus
               </a>
+              <div className="h-[1.5px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
+
+            
           </div>
           <div className="hidden md:flex items-center justify-center gap-2">
             <a
@@ -65,7 +74,7 @@ const Navbar = () => {
             className="md:hidden text-white mr-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            <Menu />
+            <Menu01Icon />
           </button>
         </div>
 

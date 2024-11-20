@@ -30,12 +30,12 @@ const MainTitle: React.FC<MainTitleProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col items-center text-center w-full  space-y-6 p-8 ${containerClassName}`}
+      className={`flex flex-col  w-full ${containerClassName}`}
     >
-      <h2 className={`tracking-wide text-3xl font-bold py-4 text-black ${titleClassName}`}>
+      <h2 className={`tracking-wide text-2xl font-bold py-4 text-black ${titleClassName}`}>
         {title}
       </h2>
-      <p className={`py-2 text-black w-1/2 font-light ${subtitleClassName}`}>
+      <p className={` text-black font-light ${subtitleClassName}`}>
         {subtitle}
       </p>
     </div>
