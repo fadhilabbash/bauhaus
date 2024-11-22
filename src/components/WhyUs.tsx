@@ -12,56 +12,56 @@ const WhyUs = () => {
       />
 
       <div className="flex items-center justify-center gap-3">
-        <div className="w-1/3 h-[220px] bg-gradient-to-tr from-black to-darkBlue rounded-xl border border-mediumBlue rounded-tl-[2em_5em]">
-          <div className="flex flex-col items-center justify-center text-center mt-6">
+        <div className="h-[220px] w-1/3 rounded-xl rounded-tl-[2em_5em] border border-mediumBlue bg-gradient-to-tr from-black to-darkBlue">
+          <div className="mt-6 flex flex-col items-center justify-center text-center">
             <img
               src="./src/assets/images/feature-icon-01.png"
               alt=""
               width="70px"
             />
-            <h2 className="text-white text-xl pt-3">فريق محترف</h2>
-            <p className="text-white text-sm font-thin pt-4 px-2">
+            <h2 className="pt-3 text-xl text-white">فريق محترف</h2>
+            <p className="px-2 pt-4 text-sm font-thin text-white">
               مستشارون عقاريون ذوو خبرة ومعرفة عميقة بالسوق
             </p>
           </div>
         </div>
 
-        <div className="w-1/3 h-[220px] bg-gradient-to-tl from-black to-darkBlue rounded-xl border border-mediumBlue rounded-tr-[2em_5em]">
-          <div className="flex flex-col items-center justify-center text-center mt-6">
+        <div className="h-[220px] w-1/3 rounded-xl rounded-tr-[2em_5em] border border-mediumBlue bg-gradient-to-tl from-black to-darkBlue">
+          <div className="mt-6 flex flex-col items-center justify-center text-center">
             <img
               src="./src/assets/images/feature-icon-02.png"
               alt=""
               width="70px"
             />
-            <h2 className="text-white text-xl  pt-3">شفافية ونزاهة</h2>
-            <p className="text-white text-sm font-thin pt-4 px-2 text-center">
+            <h2 className="pt-3 text-xl text-white">شفافية ونزاهة</h2>
+            <p className="px-2 pt-4 text-center text-sm font-thin text-white">
               التزامنا بأعلى معايير النزاهة والشفافية في كل تعاملاتنا
             </p>
           </div>
         </div>
 
-        <div className="w-1/3 h-[220px] bg-gradient-to-tr from-black to-darkBlue rounded-xl border border-mediumBlue rounded-tl-[2em_5em]">
-          <div className="flex flex-col items-center justify-center text-center mt-6">
+        <div className="h-[220px] w-1/3 rounded-xl rounded-tl-[2em_5em] border border-mediumBlue bg-gradient-to-tr from-black to-darkBlue">
+          <div className="mt-6 flex flex-col items-center justify-center text-center">
             <img
               src="./src/assets/images/feature-icon-03.png"
               alt=""
               width="70px"
             />
-            <h2 className="text-white text-xl pt-3 ">شبكة واسعة</h2>
-            <p className="text-white text-sm font-thin pt-4 px-2 text-center">
+            <h2 className="pt-3 text-xl text-white">شبكة واسعة</h2>
+            <p className="px-2 pt-4 text-center text-sm font-thin text-white">
               علاقات قوية مع المطورين والوسطاء لضمان أفضل الصفقات
             </p>
           </div>
         </div>
-        <div className="w-1/3 h-[220px] bg-gradient-to-tl from-black to-darkBlue  border border-mediumBlue rounded-xl rounded-tr-[2em_5em]">
-          <div className="flex flex-col items-center justify-center text-center mt-6">
+        <div className="h-[220px] w-1/3 rounded-xl rounded-tr-[2em_5em] border border-mediumBlue bg-gradient-to-tl from-black to-darkBlue">
+          <div className="mt-6 flex flex-col items-center justify-center text-center">
             <img
               src="./src/assets/images/feature-icon-04.png"
               alt=""
               width="70px"
             />
-            <h2 className="text-white text-xl pt-3">خبرة طويلة</h2>
-            <p className="text-white text-sm font-thin pt-4 px-2 text-center ">
+            <h2 className="pt-3 text-xl text-white">خبرة طويلة</h2>
+            <p className="px-2 pt-4 text-center text-sm font-thin text-white">
               سنوات من الخبرة في السوق العقاري المحلي والدولي
             </p>
           </div>

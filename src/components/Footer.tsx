@@ -9,15 +9,15 @@ import {
 const Footer = () => {
   return (
     <footer>
-      <div className="flex flex-col md:flex-row justify-between text-white py-10 ">
-        <div className="w-1/3 flex flex-col space-y-12 md:space-y-2 items-start justify-between mr-12">
+      <div className="flex flex-col justify-between py-10 text-white md:flex-row">
+        <div className="mr-12 flex w-1/3 flex-col items-start justify-between space-y-12 md:space-y-2">
           <img
             className="h-10"
             src="./src/assets/images/logoFooter.png"
             alt="logo"
           />
 
-          <div className="w-1/2 font-thin text-sm tracking-tighter">
+          <div className="w-1/2 text-sm font-thin tracking-tighter">
             <p>
               بتقديم أفضل الخدمات العقارية، مع التركيز على تلبية جميع احتياجات
               عملائنا وتطلعاتهم.
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-1/3 flex item-center justify-center space-x-12 text-sm rtl:space-x-reverse">
+        <div className="item-center flex w-1/3 justify-center space-x-12 text-sm rtl:space-x-reverse">
           <div className="flex flex-col space-y-2">
             <a href="" className="hover:text-slate-300">
               الرئيسية
@@ -54,9 +54,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-1/3 flex flex-col justify-between items-end ml-12">
+        <div className="ml-12 flex w-1/3 flex-col items-end justify-between">
           <div className="hidden md:block">هل لديك استفسار</div>
-          <button className="bg-primary hover:bg-slate-500 py-2 px-6 rounded-full">
+          <button className="rounded-full bg-primary px-6 py-2 hover:bg-slate-500">
             تواصل معنا
           </button>
         </div>

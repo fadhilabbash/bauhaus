@@ -1,20 +1,23 @@
 import { useState } from "react";
-import {
-  Menu01Icon,
-
-} from "hugeicons-react";
+import { Menu01Icon } from "hugeicons-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  const links = [
+    { title: "الرئيسية", to: "/" },
+    { title: "لماذا BauHaus", to: "#" },
+    { title: "خدماتنا", to: "#" },
+    { title: " عن BauHaus", to: "/about" },
+  ];
   return (
     <header className="">
-      <nav className="max-w-6xl mx-auto pt-8">
+      <nav className="mx-auto max-w-6xl pt-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6 rtl:space-x-reverse items-center justify-between">
+          <div className="hidden items-center justify-between space-x-6 md:flex rtl:space-x-reverse">
             <div className="ml-10">
               <img
                 className="motion-preset-bounce motion-duration-1000"
@@ -22,56 +25,39 @@ const Navbar = () => {
                 width={150}
               />
             </div>
-            <div className="group">
-              <a href="#home" className="text-white pb-1">
-                الرئيسية
-              </a>
-              <div className="h-[1.5px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-            <div className="group">
-              <a href="#home" className="text-white pb-1">
-              لماذا BauHaus
-              </a>
-              <div className="h-[1.5px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-            <div className="group">
-              <a href="#home" className="text-white pb-1">
-              خدماتنا
-              </a>
-              <div className="h-[1.5px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-            <div className="group">
-              <a href="#home" className="text-white pb-1">
-              عن BauHaus
-              </a>
-              <div className="h-[1.5px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-
-            
+            {links.map((link) => (
+              <div className="group">
+                <Link className="text-white" to={link.to}>
+                  {" "}
+                  {link.title}
+                </Link>
+                <div className="h-[1.5px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+              </div>
+            ))}
           </div>
-          <div className="hidden md:flex items-center justify-center gap-2">
+          <div className="hidden items-center justify-center gap-2 md:flex">
             <a
               href="#contact"
-              className="relative text-white font-light transition-all border border-slate-500 rounded-full px-4 py-1 flex flex-row-reverse items-center space-x-reverse space-x-2"
+              className="relative flex flex-row-reverse items-center space-x-2 space-x-reverse rounded-full border border-slate-500 px-4 py-1 font-light text-white transition-all"
             >
               07803379083
               {/* Blinking dot */}
-              <span className="relative flex h-2 w-2 ml-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              <span className="relative ml-2 flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
               </span>
             </a>
 
             <a
               href="#contact"
-              className="text-white font-light  transition-all border border-slate-500 rounded-full px-2 py-1"
+              className="rounded-full border border-slate-500 px-2 py-1 font-light text-white transition-all"
             >
               Hi@bauhus.com
             </a>
           </div>
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white mr-2"
+            className="mr-2 text-white md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <Menu01Icon />
@@ -79,22 +65,18 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden absolute flex flex-col items-center space-y-4 py-8 left-6 right-6 bg-gray-100 drop-shadow-xl rounded-lg">
-            <a href="#home" className="text-black">
-              Home
-            </a>
-            <a href="#about" className="text-black">
-              About
-            </a>
-            <a href="#services" className="text-black">
-              Services
-            </a>
-            <a href="#contact" className="text-black">
-              Contact
-            </a>
-          </div>
-        )}
+        {isMobileMenuOpen &&
+          links.map((link) => (
+            <div className="absolute left-6 right-6 flex flex-col items-center space-y-4 rounded-lg bg-gray-100 py-8 drop-shadow-xl md:hidden">
+              {/* <a href={link.href} className="text-black">
+                {link.title}
+              </a> */}
+              <Link className="text-black" to={link.to}>
+                {" "}
+                {link.title}
+              </Link>
+            </div>
+          ))}
       </nav>
     </header>
   );

@@ -1,16 +1,3 @@
-// const MainTitle = () => {
-//   return (
-//     <div className="flex flex-col  items-center space-x-6 space-x-reverse text-center w-full bg-white space-y-6 p-8">
-//       <h2 className="tracking-wide mt-10 text-3xl font-bold py-4 text-black">
-//         ابحث عن عقارك المثالي
-//       </h2>
-//       <p className="py-2 text-black w-1/2 font-light">
-//         ابدأ رحلتك في العثور على العقار المناسب باستخدام أدوات البحث المتقدمة
-//         لدينا. اكتشف مجموعة واسعة من الخيارات التي تلبي جميع الاحتياجات والأذواق
-//       </p>
-//     </div>
-//   );
-// };
 import React from "react";
 
 interface MainTitleProps {
@@ -29,18 +16,15 @@ const MainTitle: React.FC<MainTitleProps> = ({
   subtitleClassName = "",
 }) => {
   return (
-    <div
-      className={`flex flex-col  w-full ${containerClassName}`}
-    >
-      <h2 className={`tracking-wide text-2xl font-bold py-4 text-black ${titleClassName}`}>
+    <div className={`flex w-full flex-col ${containerClassName}`}>
+      <h2
+        className={`py-4 text-2xl font-bold tracking-wide text-black ${titleClassName}`}
+      >
         {title}
       </h2>
-      <p className={` text-black font-light ${subtitleClassName}`}>
-        {subtitle}
-      </p>
+      <p className={`font-light text-black ${subtitleClassName}`}>{subtitle}</p>
     </div>
   );
 };
 
 export default MainTitle;
-

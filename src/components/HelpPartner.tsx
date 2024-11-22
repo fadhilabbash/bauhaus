@@ -5,13 +5,13 @@ import "swiper/swiper-bundle.css";
 const HelpPartner = () => {
   return (
     <section className="custom-container">
-      <div className="flex items-center justify-center my-12">
+      <div className="my-12 flex items-center justify-center">
         <img className="w-96" src="./src/assets/images/group.png" alt="" />
       </div>
-      <div className="relative  w-[400px] h-[200px] md:w-[540px] md:h-[240px] mx-auto  flex items-center justify-between mb-[200px] py-20 bg-gradient-to-tr from-black to-darkBlue rounded-3xl border border-mediumBlue">
+      <div className="relative mx-auto mb-[200px] flex h-[200px] w-[400px] items-center justify-between rounded-3xl border border-mediumBlue bg-gradient-to-tr from-black to-darkBlue py-20 md:h-[240px] md:w-[540px]">
         <div
           id="swiper-button-prev"
-          className="hidden md:flex absolute  -right-32 cursor-pointer border border-primary rounded-full text-center px-4 py-1"
+          className="absolute -right-32 hidden cursor-pointer rounded-full border border-primary px-4 py-1 text-center md:flex"
         >
           <ArrowRight02Icon size={16} />
         </div>
@@ -24,26 +24,26 @@ const HelpPartner = () => {
             prevEl: "#swiper-button-prev",
           }}
           pagination={{ clickable: true }}
-          className="w-[360px] h-[150px] md:w-[490px] md:h-[200px] md:rounded-3xl md:border md:border-mediumBlue md:bg-gradient-to-r from-[#33333E29] to-[#9296EE00]"
+          className="h-[150px] w-[360px] from-[#33333E29] to-[#9296EE00] md:h-[200px] md:w-[490px] md:rounded-3xl md:border md:border-mediumBlue md:bg-gradient-to-r"
         >
           <SwiperSlide>
-            <div className=" text-white p-11 flex flex-col space-y-6">
+            <div className="flex flex-col space-y-6 p-11 text-white">
               <div className="flex items-center justify-between">
-                <div className="flex items-center  border rounded-full bg-[#e2e5ee] p-1">
+                <div className="flex items-center rounded-full border bg-[#e2e5ee] p-1">
                   <img
                     src="https://picsum.photos/id/249/300/200"
                     alt="User"
                     className="size-10 rounded-full"
                   />
                   <div className="mx-2">
-                    <p className="font-light text-sm text-black">أحمد وحيد</p>
-                    <p className="font-light text-sm opacity-70 text-black">
+                    <p className="text-sm font-light text-black">أحمد وحيد</p>
+                    <p className="text-sm font-light text-black opacity-70">
                       مستثمر عقاري
                     </p>
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm opacity-70 mb-4">last year</p>
+                  <p className="mb-4 text-sm opacity-70">last year</p>
                 </div>
               </div>
               <p className="text-md font-light">
@@ -53,23 +53,23 @@ const HelpPartner = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className=" text-white p-11 flex flex-col space-y-6">
+            <div className="flex flex-col space-y-6 p-11 text-white">
               <div className="flex items-center justify-between">
-                <div className="flex items-center  border rounded-full bg-[#e2e5ee] p-1">
+                <div className="flex items-center rounded-full border bg-[#e2e5ee] p-1">
                   <img
                     src="https://picsum.photos/id/249/300/200"
                     alt="User"
                     className="size-10 rounded-full"
                   />
                   <div className="mx-2">
-                    <p className="font-light text-sm text-black">أحمد وحيد</p>
-                    <p className="font-light text-sm opacity-70 text-black">
+                    <p className="text-sm font-light text-black">أحمد وحيد</p>
+                    <p className="text-sm font-light text-black opacity-70">
                       مستثمر عقاري
                     </p>
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm opacity-70 mb-4">last year</p>
+                  <p className="mb-4 text-sm opacity-70">last year</p>
                 </div>
               </div>
               <p className="text-md font-light">
@@ -79,23 +79,23 @@ const HelpPartner = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className=" text-white md:p-11 flex flex-col space-y-6">
+            <div className="flex flex-col space-y-6 text-white md:p-11">
               <div className="flex items-center justify-between">
-                <div className="flex items-center  border rounded-full bg-[#e2e5ee] p-1">
+                <div className="flex items-center rounded-full border bg-[#e2e5ee] p-1">
                   <img
                     src="https://picsum.photos/id/249/300/200"
                     alt="User"
                     className="size-10 rounded-full"
                   />
                   <div className="mdmx-2">
-                    <p className="font-light text-sm text-black">أحمد وحيد</p>
-                    <p className="font-light text-sm opacity-70 text-black">
+                    <p className="text-sm font-light text-black">أحمد وحيد</p>
+                    <p className="text-sm font-light text-black opacity-70">
                       مستثمر عقاري
                     </p>
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm opacity-70 mb-4">last year</p>
+                  <p className="mb-4 text-sm opacity-70">last year</p>
                 </div>
               </div>
               <p className="text-md font-light">
@@ -108,7 +108,7 @@ const HelpPartner = () => {
 
         <div
           id="swiper-button-next"
-          className="hidden md:flex absolute -left-32 cursor-pointer border border-primary rounded-full text-center px-4 py-1"
+          className="absolute -left-32 hidden cursor-pointer rounded-full border border-primary px-4 py-1 text-center md:flex"
         >
           <ArrowLeft02Icon size={16} />
         </div>

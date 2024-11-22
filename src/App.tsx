@@ -1,30 +1,20 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import SearchProperty from "./components/SearchProperty";
-import HeroWrapper from "./components/HeroWrapper";
-import Footer from "./components/Footer";
-import HelpPartner from "./components/HelpPartner";
-import WhyUs from "./components/WhyUs";
-import Services from "./components/Services";
-import DiscoverChances from "./components/DiscoverChances";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import About from "./pages/about";
+import NoPage from "./pages/NoPage";
 
 function App() {
   return (
-    <>
-    
-
-      <HeroWrapper>
-        <Navbar />
-        <Hero />
-      </HeroWrapper>
-      <SearchProperty />
-      <DiscoverChances/>
-      <WhyUs/>
-      <Services/>
-      <HelpPartner/>
-    
-      <Footer/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
