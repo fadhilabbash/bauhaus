@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Menu01Icon } from "hugeicons-react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const links = [
     { title: "الرئيسية", to: "/" },
-    { title: "لماذا BauHaus", to: "#" },
-    { title: "خدماتنا", to: "#" },
+    { title: "لماذا BauHaus", to: "/whyus" },
+    { title: "خدماتنا", to: "/services" },
     { title: " عن BauHaus", to: "/about" },
   ];
   return (
@@ -25,13 +25,27 @@ const Navbar = () => {
                 width={150}
               />
             </div>
-            {links.map((link) => (
-              <div className="group">
-                <Link className="text-white" to={link.to}>
-                  {" "}
-                  {link.title}
-                </Link>
-                <div className="h-[1.5px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+            {links.map((link, index) => (
+              <div key={index} className="group">
+                <NavLink
+                  to={link.to}
+                  className={({ isActive }) =>
+                    `text-white ${isActive ? "font-bold" : "opacity-70"}`
+                  }
+                >
+                  {({ isActive }) => (
+                    <>
+                      {link.title}
+                      <div
+                        className={`h-[1.5px] bg-gradient-to-r from-transparent via-primary to-transparent transition-opacity duration-300 ${
+                          isActive
+                            ? "opacity-100"
+                            : "opacity-0 group-hover:opacity-100"
+                        }`}
+                      ></div>
+                    </>
+                  )}
+                </NavLink>
               </div>
             ))}
           </div>
