@@ -15,7 +15,7 @@ const Services = () => {
         subtitleClassName="text-white text-thin"
       />
 
-      <div className="mt-16 grid grid-cols-2 gap-12">
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Section1 */}
         <TextListSection
           title={servicesData.section1.title}

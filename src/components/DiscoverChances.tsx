@@ -13,7 +13,7 @@ const DiscoverChances = () => {
   return (
     <>
       <section className="custom-container">
-        <div className="h-30 my-12 flex items-center justify-around rounded-xl bg-[#FFFFFF05] p-2">
+        <div className="hidden h-30 my-12 md:flex items-center justify-around rounded-xl bg-[#FFFFFF05] p-2">
           <a
             href="#home"
             className="flex items-center justify-center rounded-2xl border border-primary p-3 text-sm text-white"

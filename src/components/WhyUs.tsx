@@ -11,8 +11,8 @@ const WhyUs = () => {
         subtitleClassName="text-white text-thin w-1/2"
       />
 
-      <div className="flex items-center justify-center gap-3">
-        <div className="h-[220px] w-1/3 rounded-xl rounded-tl-[2em_5em] border border-mediumBlue bg-gradient-to-tr from-black to-darkBlue">
+      <div className="flex flex-col items-center justify-center gap-3 space-y-12 md:flex-row">
+        <div className="h-[220px] w-full rounded-xl rounded-tl-[2em_5em] border border-mediumBlue bg-gradient-to-tr from-black to-darkBlue md:w-1/3">
           <div className="mt-6 flex flex-col items-center justify-center text-center">
             <img
               src="./src/assets/images/feature-icon-01.png"
@@ -26,7 +26,7 @@ const WhyUs = () => {
           </div>
         </div>
 
-        <div className="h-[220px] w-1/3 rounded-xl rounded-tr-[2em_5em] border border-mediumBlue bg-gradient-to-tl from-black to-darkBlue">
+        <div className="h-[220px] w-full rounded-xl rounded-tr-[2em_5em] border border-mediumBlue bg-gradient-to-tl from-black to-darkBlue md:w-1/3">
           <div className="mt-6 flex flex-col items-center justify-center text-center">
             <img
               src="./src/assets/images/feature-icon-02.png"
@@ -40,7 +40,7 @@ const WhyUs = () => {
           </div>
         </div>
 
-        <div className="h-[220px] w-1/3 rounded-xl rounded-tl-[2em_5em] border border-mediumBlue bg-gradient-to-tr from-black to-darkBlue">
+        <div className="h-[220px] w-full rounded-xl rounded-tl-[2em_5em] border border-mediumBlue bg-gradient-to-tr from-black to-darkBlue md:w-1/3">
           <div className="mt-6 flex flex-col items-center justify-center text-center">
             <img
               src="./src/assets/images/feature-icon-03.png"
@@ -53,7 +53,7 @@ const WhyUs = () => {
             </p>
           </div>
         </div>
-        <div className="h-[220px] w-1/3 rounded-xl rounded-tr-[2em_5em] border border-mediumBlue bg-gradient-to-tl from-black to-darkBlue">
+        <div className="h-[220px] w-full rounded-xl rounded-tr-[2em_5em] border border-mediumBlue bg-gradient-to-tl from-black to-darkBlue md:w-1/3">
           <div className="mt-6 flex flex-col items-center justify-center text-center">
             <img
               src="./src/assets/images/feature-icon-04.png"
