@@ -5,6 +5,8 @@ import {
   TwitterIcon,
   WhatsappIcon,
 } from "hugeicons-react";
+import { links } from "../lib/staticData";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -27,18 +29,25 @@ const Footer = () => {
 
         <div className="item-center flex w-1/3 justify-center space-x-12 text-sm rtl:space-x-reverse">
           <div className="flex flex-col space-y-2">
-            <a href="" className="hover:text-slate-300">
-              الرئيسية
-            </a>
-            <a href="" className="hover:text-slate-300">
-              الخدمات
-            </a>
-            <a href="" className="hover:text-slate-300">
-              لماذا PauHuse
-            </a>
-            <a href="" className="hover:text-slate-300">
-              عنا
-            </a>
+            {links.map((link, index) => (
+              <Link
+                key={index}
+                className="hover:text-slate-300"
+                to={link.to}
+                onClick={(e) => {
+                  if (link.to.startsWith("#")) {
+                    e.preventDefault(); // Prevent default NavLink behavior for hash links
+                    const sectionId = link.to.slice(1); // Remove '#' symbol
+                    document
+                      .getElementById(sectionId)
+                      ?.scrollIntoView({ behavior: "smooth" });
+                    window.history.pushState(null, "", link.to); // Update URL hash
+                  }
+                }}
+              >
+                {link.title}
+              </Link>
+            ))}
           </div>
           <div className="flex flex-col space-y-4">
             <h2 className="hover:text-slate-300">

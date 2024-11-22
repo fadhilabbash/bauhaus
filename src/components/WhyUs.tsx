@@ -2,7 +2,7 @@ import MainTitle from "./MainTitle";
 
 const WhyUs = () => {
   return (
-    <section className="custom-container">
+    <section id="whyus" className="custom-container">
       <MainTitle
         title="لماذا تختار BauHaus؟"
         subtitle="نحن نتميز بخبرتنا الواسعة وفريقنا المحترف، مما يجعلنا الخيار الأول للعملاء الباحثين عن الجودة والموثوقية."
@@ -11,7 +11,7 @@ const WhyUs = () => {
         subtitleClassName="text-white text-thin w-1/2"
       />
 
-      <div className="flex flex-col items-center justify-center gap-3 space-y-12 md:flex-row">
+      <div className="flex flex-col items-center justify-center gap-3 space-y-12 md:space-y-0 md:flex-row mt-6">
         <div className="h-[220px] w-full rounded-xl rounded-tl-[2em_5em] border border-mediumBlue bg-gradient-to-tr from-black to-darkBlue md:w-1/3">
           <div className="mt-6 flex flex-col items-center justify-center text-center">
             <img
@@ -20,7 +20,7 @@ const WhyUs = () => {
               width="70px"
             />
             <h2 className="pt-3 text-xl text-white">فريق محترف</h2>
-            <p className="px-2 pt-4 text-sm font-thin text-white">
+            <p className="px-2 pt-4 text-center text-sm font-thin text-white">
               مستشارون عقاريون ذوو خبرة ومعرفة عميقة بالسوق
             </p>
           </div>

@@ -1,3 +1,10 @@
+export const links = [
+  { title: "الرئيسية", to: "/" },
+  { title: "لماذا BauHaus", to: "#whyus" },
+  { title: "خدماتنا", to: "#services" },
+  { title: " عن BauHaus", to: "/about" },
+];
+
 export const servicesData = {
     section1: {
         title: "وساطة عقارية أمنة بين المالك والمشتري",

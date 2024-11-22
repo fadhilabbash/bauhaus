@@ -6,7 +6,7 @@ import TextListSection from "./TextListSection";
 const Services = () => {
  
   return (
-    <section className="custom-container mb-32 mt-16">
+    <section id="services" className="custom-container mb-32 mt-16">
       <MainTitle
         title="خدماتنا تساعدك بأتخاذ افضل خيارات الاستمثار العقارية"
         subtitle="نحن نقدم مجموعة شاملة من الخدمات العقارية لتلبية جميع احتياجاتكم"
