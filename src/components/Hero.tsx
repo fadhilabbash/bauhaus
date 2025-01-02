@@ -2,10 +2,10 @@ import { ArrowUpRight01Icon } from "hugeicons-react";
 
 const Hero = () => {
   return (
-    <section className="container mx-auto md:bg-[url('./src/assets/images/cover.png')] bg-cover h-screen bg-center">
-      <div className=" flex flex-col md:flex-row">
+    <section className="container mx-auto md:bg-[url('./src/assets/images/cover.png')] bg-cover bg-center">
+      <div className=" flex flex-col md:flex-row h-[calc(100vh-10rem)]">
 
-        <div className="flex flex-col justify-center pt-16 pr-12 space-y-8  md:w-2/3">
+        <div className="flex flex-col pt-16 pr-12 space-y-8  md:w-2/3">
           <h1 className="bg-gradient-to-r from-[#bcdbdb] to-[#eaf0ed] bg-clip-text pb-4 text-xl font-light tracking-wide text-transparent md:text-4xl">
             ابدا رحلتك في العثور على
           </h1>
@@ -37,7 +37,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center  md:w-1/3">
+        <div className="flex flex-col items-center md:w-1/3">
           <div className="relative h-[300px] w-[300px] rounded-xl">
             <div className="absolute inset-0 rounded-xl bg-black opacity-20"></div>
             <div className="absolute left-6 right-6 top-12 flex h-12 flex-row items-center rounded-full bg-secondary2">
@@ -60,8 +60,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-8">
-        <img src="./src/assets/images/margin.png" />
+      <div className="flex items-end justify-center h-16 mb-8 md:bg-[url('./src/assets/images/margin.png')] bg-cover bg-center">
       </div>
     </section>
   );

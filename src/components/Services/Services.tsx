@@ -4,7 +4,6 @@ import ImageSection from "./ImageSection";
 import TextListSection from "./TextListSection";
 
 const Services = () => {
- 
   return (
     <section id="services" className="custom-container mb-32 mt-16">
       <MainTitle
@@ -15,7 +14,7 @@ const Services = () => {
         subtitleClassName="text-white text-thin"
       />
 
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="mt-16 grid grid-cols-1 gap-12 md:grid-cols-2">
         {/* Section1 */}
         <TextListSection
           title={servicesData.section1.title}
@@ -44,8 +43,8 @@ const Services = () => {
           title={servicesData.section2.title}
           items={servicesData.section2.items}
         />
-         {/* Section3 */}
-         <TextListSection
+        {/* Section3 */}
+        <TextListSection
           title={servicesData.section3.title}
           items={servicesData.section3.items}
         />
@@ -58,8 +57,8 @@ const Services = () => {
           linkBgPosition="-right-4"
           linkeBgColor="bg-primary"
         />
-         {/* Section4 */}
-         <ImageSection
+        {/* Section4 */}
+        <ImageSection
           bGImage="bg-[url('./src/assets/images/service_04.jpeg')]"
           link="#"
           linkIconPosition="left-1"
@@ -72,8 +71,8 @@ const Services = () => {
           title={servicesData.section4.title}
           items={servicesData.section4.items}
         />
-          {/* Section5 */}
-          <TextListSection
+        {/* Section5 */}
+        <TextListSection
           title={servicesData.section5.title}
           items={servicesData.section5.items}
         />

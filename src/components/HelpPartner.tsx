@@ -27,7 +27,34 @@ const HelpPartner = () => {
           className="h-[150px] w-[360px] from-[#33333E29] to-[#9296EE00] md:h-[200px] md:w-[490px] md:rounded-3xl md:border md:border-mediumBlue md:bg-gradient-to-r"
         >
           <SwiperSlide>
-            <div className="flex flex-col space-y-6 p-11 text-white">
+            <div className="flex flex-col space-y-2 px-4 pt-4 text-white ">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center rounded-full border bg-[#e2e5ee] p-1">
+                  <img
+                    src="https://picsum.photos/id/249/300/200"
+                    alt="User"
+                    className="size-10 rounded-full"
+                  />
+                  <div className="mx-2">
+                    <p className="text-sm font-light text-black">أحمد وحيد</p>
+                    <p className="text-sm font-light text-black opacity-70">
+                      مستثمر عقاري
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p className="mb-4 text-sm opacity-70">last year</p>
+                </div>
+              </div>
+              <p className="text-md font-light">
+                الاستثمار صعب جدا بدون الامكانيات الإرشادية من اجل اتخاذ قرار
+                صائب ولكن الشركة والحمدالله ساعدتني بوضع خطة استثمارية ممتازة.
+              </p>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="flex flex-col space-y-2 px-4 pt-4 text-white">
               <div className="flex items-center justify-between">
                 <div className="flex items-center rounded-full border bg-[#e2e5ee] p-1">
                   <img
@@ -53,7 +80,7 @@ const HelpPartner = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col space-y-6 p-11 text-white">
+            <div className="p flex flex-col space-y-2 px-4 pt-4 text-white">
               <div className="flex items-center justify-between">
                 <div className="flex items-center rounded-full border bg-[#e2e5ee] p-1">
                   <img
@@ -62,32 +89,6 @@ const HelpPartner = () => {
                     className="size-10 rounded-full"
                   />
                   <div className="mx-2">
-                    <p className="text-sm font-light text-black">أحمد وحيد</p>
-                    <p className="text-sm font-light text-black opacity-70">
-                      مستثمر عقاري
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <p className="mb-4 text-sm opacity-70">last year</p>
-                </div>
-              </div>
-              <p className="text-md font-light">
-                الاستثمار صعب جدا بدون الامكانيات الإرشادية من اجل اتخاذ قرار
-                صائب ولكن الشركة والحمدالله ساعدتني بوضع خطة استثمارية ممتازة.
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col space-y-6 text-white md:p-11">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center rounded-full border bg-[#e2e5ee] p-1">
-                  <img
-                    src="https://picsum.photos/id/249/300/200"
-                    alt="User"
-                    className="size-10 rounded-full"
-                  />
-                  <div className="mdmx-2">
                     <p className="text-sm font-light text-black">أحمد وحيد</p>
                     <p className="text-sm font-light text-black opacity-70">
                       مستثمر عقاري

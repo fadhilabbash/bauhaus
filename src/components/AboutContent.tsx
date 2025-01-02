@@ -1,6 +1,6 @@
  const AboutContent = () => {
   return (
-    <section className="container mx-auto">
+    <section>
       <div>
         <div>
           <h1 className="p-16 text-4xl font-bold leading-loose tracking-wide">

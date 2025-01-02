@@ -22,9 +22,12 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="mx-auto max-w-6xl pt-8">
+      <nav className="mx-16 pt-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+        
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center justify-between space-x-6 rtl:space-x-reverse">
+              {/* Logo */}
           <div className="ml-10">
             <img
               className="motion-preset-bounce motion-duration-1000"
@@ -34,8 +37,6 @@ const Navbar = () => {
             />
           </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center justify-between space-x-6 rtl:space-x-reverse">
             {links.map((link, index) => (
               <div key={index} className="group">
                 <NavLink
